@@ -92,7 +92,7 @@ function addAnimals() {
       // If the current node does not have a question, add the new animal as the first node in the tree
       let yesNode = new Node(distinguishingQuestion, null, null, animalName);
       currentNode.question = distinguishingQuestion;
-      currentNode.yes = yesNode;
+      currentNode.yes = animalName;
       currentNode.no = new Node(null, null, null, null);
       currentNode = currentNode.yes;
     }
