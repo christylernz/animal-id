@@ -41,9 +41,9 @@ function startGame() {
 }
 
 function handleYes() {
+  previousNode = currentNode;
+  currentNode = currentNode.yes;
   if (guessing) {
-    previousNode = currentNode;
-    currentNode = currentNode.yes;
     if (currentNode.question) {
       document.getElementById('question').innerHTML = currentNode.question;
     } else {
