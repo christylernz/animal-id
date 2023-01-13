@@ -42,7 +42,7 @@ function startGame() {
 
 function handleYes() {
   previousNode = currentNode;
-  currentNode = currentNode.yes;
+
   if (guessing) {
     if (currentNode.question) {
       document.getElementById('question').innerHTML = currentNode.question;
@@ -58,6 +58,7 @@ function handleYes() {
     document.getElementById('start-button').style.display = 'block';
     document.getElementById('buttons').style.display = 'none';
   }
+  currentNode = currentNode.yes;
 }
 
 function handleNo() {
