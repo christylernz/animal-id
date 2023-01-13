@@ -97,6 +97,7 @@ function addAnimals() {
       currentNode = currentNode.yes;
     }
     saveAnimals(animals);
+    document.getElementById('result').style.display = 'none';
     document.getElementById('add-animal').style.display = 'none';
     document.getElementById('start-button').style.display = 'block';
   }
