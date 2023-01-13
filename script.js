@@ -84,11 +84,13 @@ function addAnimals() {
     let distinguishingQuestion = document.getElementById('distinguishing-question').value;
   
     if (currentNode.question) {
+      console.log("existing question");
       // If the current node already has a question, add the new animal as a child node
       let yesNode = new Node(distinguishingQuestion, null, null, animalName);
       currentNode.yes = yesNode;
       currentNode = currentNode.yes;
     } else {
+      console.log("new question");
       // If the current node does not have a question, add the new animal as the first node in the tree
       let yesNode = new Node(distinguishingQuestion, null, null, animalName);
       currentNode.question = distinguishingQuestion;
