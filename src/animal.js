@@ -9,3 +9,6 @@ class Node {
     }
   }
 
+function helloWorld() {
+  return "hello world";
+}
