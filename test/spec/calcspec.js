@@ -15,7 +15,7 @@ describe("Given the decision tree contains no animals or distinguishing question
   });
 });
 
-describe("helloWorld", () => {
+describe("hello this is the World", () => {
     it("returns hello world", () => {
       var actual = helloWorld();
       expect(actual).toBe("hello world");
